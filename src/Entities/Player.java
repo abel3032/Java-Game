@@ -1,6 +1,5 @@
 package Entities;
 
-import java.beans.Beans;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
