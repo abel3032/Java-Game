@@ -27,51 +27,46 @@ public class KeyboardInputs implements KeyListener {
         if(e.getKeyCode() == 'A')
         {
             gamePanel.getGame().getPlayer().setA(true);
-            //gamePanel.getGame().getPlayer().setDirection(LEFT);
+
         }
         if(e.getKeyCode() == 'S')
         {
             gamePanel.getGame().getPlayer().setS(true);
-            //gamePanel.getGame().getPlayer().setDirection(DOWN);
+
         }
         if(e.getKeyCode() == 'D')
         {
             gamePanel.getGame().getPlayer().setD(true);
-            //gamePanel.getGame().getPlayer().setDirection(RIGHT);
+
         }
         if(e.getKeyCode() == 'W')
         {
             gamePanel.getGame().getPlayer().setW(true);
-            //gamePanel.getGame().getPlayer().setDirection(UP);
+
         }
 
-        if(e.getKeyCode() == 32)
-        {
-            gamePanel.getGame().getPlayer().setJump(true);
-            if(gamePanel.getGame().getPlayer().getJump())
-            {
-                System.out.println("merge spaceu");
-            }
-            else
-                System.out.println("nu merge");
-        }
+
     }
 
     @Override
     public void keyReleased(KeyEvent e) {
 
-        if(e.getKeyCode() == 'A' || e.getKeyCode() == 'S' || e.getKeyCode() == 'W' || e.getKeyCode() == 'D')
+        if(e.getKeyCode() == 'A')
         {
-            gamePanel.getGame().getPlayer().setMoving(false);
-            gamePanel.getGame().getPlayer().setAllFalse();
+            gamePanel.getGame().getPlayer().setA(false);
         }
-        if(e.getKeyCode() == 32)
+        if(e.getKeyCode() == 'S')
         {
-            gamePanel.getGame().getPlayer().setJump(false);
-            if(!gamePanel.getGame().getPlayer().getJump())
-            {
-                System.out.println("merge sa cada inapoi");
-            }
+            gamePanel.getGame().getPlayer().setS(false);
         }
+        if(e.getKeyCode() == 'W')
+        {
+            gamePanel.getGame().getPlayer().setW(false);
+        }
+        if(e.getKeyCode() == 'D')
+        {
+            gamePanel.getGame().getPlayer().setD(false);
+        }
+
     }
 }

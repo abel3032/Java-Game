@@ -97,4 +97,8 @@ public class Game implements Runnable{
     {
         return player;
     }
+
+    public void windowsFocusLost() {
+        player.resetDirBooleans();
+    }
 }
