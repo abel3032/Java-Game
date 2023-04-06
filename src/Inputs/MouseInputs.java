@@ -1,7 +1,7 @@
 package Inputs;
 
 import Main.GamePanel;
-import Rectangles.dreptunghiuri;
+
 
 
 import java.util.ArrayList;
